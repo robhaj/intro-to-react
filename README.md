@@ -23,4 +23,4 @@
   - React components are typically written in JSX.
   - HTML syntax is turned into JavaScript calls of the React library. You may also write pure JS.
 
-[tooling](!modern-javascript-tooling.png)
+![tooling](modern-javascript-tooling.png)
