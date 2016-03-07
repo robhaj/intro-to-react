@@ -1,6 +1,5 @@
 # Hello World in React.JS
 Follow the steps to install the generator @ [generator-galvanize-react](https://github.com/robhaj/generator-galvanize-react)
-```
 Take a look at the index.html file
 You'll notice bundle.js being linked in. Webpack bundles our files into one file called bundle.js before build.
 Take a look inside the components folder and you'll find an app.js file.
