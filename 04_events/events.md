@@ -30,3 +30,18 @@ onInputChange(event) {
 }
 ```
 This should console log what ever is type into the input.
+
+We can actually refactor our code to remove the defined onInputChange method but still have the same functionality.
+Instead of saying
+```javascript
+render() {
+  return <input onChange={this.onInputChange} />
+}
+```
+We can simply say
+```javascript
+render() {
+  return <input onChange={(event) => console.log(event.target.value) }
+}
+```
+and remove the onInputChange method.
