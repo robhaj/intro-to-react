@@ -1,7 +1,6 @@
 # Hello World in React.JS
 Follow the steps to install the generator @ [generator-galvanize-react](https://github.com/robhaj/generator-galvanize-react)
-- Take a look at the index.html file
-- You'll notice bundle.js being linked in.
+- Take a look at the index.html file, you'll notice bundle.js being linked in.
   - Webpack bundles our files into one file called bundle.js before build.
 - Take a look inside the components folder and you'll find an app.js file.
 - When we write React code we write individual components.
@@ -14,19 +13,21 @@ Follow the steps to install the generator @ [generator-galvanize-react](https://
   - Inside of index.js
 
 ```javascript
-// Create a new component
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
   return <div> Hello World! </div>;
 }
-// Put component on DOM
+
 ReactDOM.render(<App />, document.querySelector('.container'))
 ```
 
 Run `npm start` and you should see 'Hello World' on the page.
-- The import statements are ES6, in ES5 you would see
+
+
+## Breaking it down
+
 ```javascript
 var React = require('react');
 var ReactDOM = require('react-dom');
