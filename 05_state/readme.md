@@ -21,9 +21,9 @@ class SearchBar extends Component {
 ```
 - This is how we initialize state in class based components. Functional components do not have state.
 - All javascript classes have a special function called constructor. It is the first and only function called automatically whenever a new instance of the class is created.
-- This function is reserved for setting up our class component.
+  - This function is reserved for setting up our class component.
 - Since Component itself, has its own constructor function, we have to call the parent method on the parent class.
-  - When we define a method that is already defined on the parent class (Component), we can call that parent method by calling `super()``
+  - When we define a method that is already defined on the parent class (Component), we can call that parent method by calling `super()`
   - We then set our state object's initial value.
   - The only time we call `this.state` and set it equal to an object, is in our constructor function.
   - Any other time we need to manipulate state we use `this.setState`
