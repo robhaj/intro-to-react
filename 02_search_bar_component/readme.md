@@ -1,3 +1,5 @@
+## Adding a SearchBar Component
+
 - Here we will be adding a search bar component to our app
 - In components, add a file called search_bar.js
 - Add the following

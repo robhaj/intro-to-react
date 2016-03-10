@@ -1,3 +1,5 @@
+## Events
+
 - This is an intro to handling events in React
 - There are two steps
   - First we declare an event handler, a function that runs whenever the event occurs.

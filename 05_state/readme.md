@@ -1,3 +1,5 @@
+## State
+
 - State is one of the most confusing concepts to grasp but is probably the most important.
 - State is a plain javascript object that is used to record and react to user events.
 - Each class based component that we define has its own state object.

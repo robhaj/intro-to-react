@@ -1,3 +1,5 @@
+## Class-Based Components
+
 - Here we will be refactoring our functional component into a class based component.
 - When to use class based component vs functional component?
   - Start with a functional component, if you find yourself needing additional functionality, make it a class based component
