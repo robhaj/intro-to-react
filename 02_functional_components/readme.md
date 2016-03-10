@@ -1,4 +1,4 @@
-## Adding a SearchBar Component
+## Functional Components
 
 - Here we will be adding a search bar component to our app
 - In components, add a file called search_bar.js
