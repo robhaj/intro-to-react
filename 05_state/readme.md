@@ -22,5 +22,17 @@ class SearchBar extends Component {
 - This function is reserved for setting up our class.
 - Component itself, has its own constructor function.
   - When we define a method that is already defined on the parent class (Component), we can call that parent method by calling super()
-  - We then set our state object.
-  -
+  - We then set our state object's initial value.
+
+```javascript
+class SearchBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { term: ''};
+  }
+  render() {
+    return <input onChange={event => setState({term: event.target.value})} />
+  }
+}
+```
