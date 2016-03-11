@@ -1,1 +1,23 @@
 ## Intro to Redux
+
+- What is Redux?
+  - Redux is a predictable state container for JavaScript apps.
+  - Write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+  - You can use Redux together with React, or with any other view library.
+  - It is tiny (2kB, including dependencies).
+  - From the creator :  [https://egghead.io/series/getting-started-with-redux](Getting Started with Redux!)
+- Goal of Redux:
+   - To create a state management library with minimal API but completely predictable behavior, so it is possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
+- The whole state of your app is stored in an object tree inside a single store.
+- The only way to change the state tree is to emit an action, an object describing what happened.
+- To specify how the actions transform the state tree, you write pure reducers.
+- Instead of mutating the state directly, you specify the mutations you want to happen with plain objects called actions.
+  - Then you write a special function called a reducer to decide how every action transforms the entire application’s state.
+  - If you’re coming from Flux, there is a single important difference you need to understand.
+    - Redux doesn’t have a Dispatcher or support many stores.
+      - Instead, there is just a single store with a single root reducing function.
+    - As your app grows, instead of adding stores, you split the root reducer into smaller reducers independently operating on the different parts of the state tree.
+    - This is exactly like there is just one root component in a React app, but it is composed out of many small components.
+  - This architecture might seem like an overkill for a counter app, but the beauty of this pattern is how well it scales to large and complex apps.
+  - It also enables very powerful developer tools, because it is possible to trace every mutation to the action that caused it.
+    - You can record user sessions and reproduce them just by replaying every action.
